@@ -4,13 +4,13 @@ import sys
 def onetoone(s1, s2): 
 	if len(s1)!=len(s2): 
 		return False
-	word_dict={}
+	word_dictionary={}
 	for i in range(len(s1)): 
-		if s1[i] in word_dict: 
-			if word_dict[s1[i]]!=s2[i]: 
+		if s1[i] in word_dictionary: 
+			if word_dictionary[s1[i]]!=s2[i]: 
 				return False 
 		else: 
-			word_dict[s1[i]]=s2[i]
+			word_dictionary[s1[i]]=s2[i]
 	return True
 
 if __name__ == '__main__':
